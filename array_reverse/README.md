@@ -6,4 +6,4 @@ This script contains a function rev(arr) with an arity of one. It takes in an ar
     //returns: [4,3,2,1]
 
 
-![whiteboard](assets/WB_rev-arr.jpg)
+![whiteboard](assets/WB_rev_arr.jpg)
