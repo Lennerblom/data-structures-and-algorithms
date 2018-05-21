@@ -12,4 +12,4 @@ The challenge in creating this function is to not use any built in javaScript fu
 
 ##Solution
 
-![whiteboard]('assets/binary_search.jpg)
+![whiteboard](assets/binary_search.jpg)
