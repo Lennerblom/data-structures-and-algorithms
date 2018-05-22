@@ -15,7 +15,7 @@ describe('BinarySearch', () => {
   it('BinarySearch works with large arrays', () => {
     function makeBigArray() {
       const bigArr = [];
-      for(let i = 0; i < 10000; i++) {
+      for(let i = 0; i < 1000000; i++) {
         bigArr.push(i);
       }
       return bigArr;
