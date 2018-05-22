@@ -1,22 +1,28 @@
 'use strict';
 
 function insertShiftArray(arr, num) {
+  let newArr = [];
+  console.log(num);
   let index = 0;
-  if(arr.length %2 === 0) {
-    let index = arr.length/2 + 1;
-    for(let i = index +1; i < arr.length; i++) {
-      arr[i++];
-    }
+  if((arr.length) %2 === 0) {
+    let index = (arr.length/2);
+    
+    console.log(index);
   } else {
-    let index = arr.length++/2;
-
-    for(let i = index +1; i < arr.length; i++) {
-      arr[i++];
-    }
-  }
-  num = arr[index];
-  return arr;
+    let index = (arr.length +1)/2;
+    console.log(index);
+  };
+    for(let i = 0; i < index; i++){
+      newArr[i] = arr[i];
+      return newArr;
+    };
+    newArr[index] = num;
+    for(let j = index+1;  j < arr.length-1; j++) {
+      newArr[j] = arr[j];
+    };
+ 
+  return newArr;
 }
-insertShiftArray([1,2,3,4,5], 14);
+
 
 module.exports = insertShiftArray();
