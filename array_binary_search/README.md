@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/Lennerblom/data-structures-and-algorithms.svg?branch=master)](https://travis-ci.org/Lennerblom/data-structures-and-algorithms)
+
 #Array_binary_search
 
 The BinarySearch function has an arity of 2, an array and a search key.  The funcion will return the index of the search key parameter.  If the element does not exist in the array, it will return -1.
