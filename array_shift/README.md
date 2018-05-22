@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/Lennerblom/data-structures-and-algorithms.svg?branch=master)](https://travis-ci.org/Lennerblom/data-structures-and-algorithms)
+
 #array_shift
 
 The insertShiftArray function has an arity of 2, an array and an element to insert into the middle index.  The funcion will return an array with the added element in the middle index.  
