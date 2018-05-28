@@ -35,7 +35,7 @@ function BinarySearch (arr,num) {
 
   if(num === candidate) {
     return middle;
-}
+} 
 
 return -1;
 
