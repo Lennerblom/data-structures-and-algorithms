@@ -8,6 +8,6 @@ describe('insertShiftArray', () => {
     let arr = [1,2,3,4];
     let num = 14;
 
-    expect(insertShiftArray([arr], num)).toBe([1,2,14,3,4]);
+    expect(insertShiftArray(arr, num)).toBe([1,2,14,3,4]);
   });
 });

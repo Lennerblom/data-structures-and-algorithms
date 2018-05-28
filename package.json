@@ -1,22 +1,18 @@
 {
-  "name": "array_binary_search",
+  "name": "data-structures-and-algorithms",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "directories": {
-    "lib": "lib"
-  },
   "scripts": {
-    "lint": "eslint **/*.js",
-    "test": "jest --verbose --coverage"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Lennerblom/data-structures-and-algorithms.git"
   },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "bugs": {
     "url": "https://github.com/Lennerblom/data-structures-and-algorithms/issues"
   },
