@@ -1,6 +1,8 @@
 'use strict';
 
 const BinarySearch = require('../lib/array_binary_search.js');
+const os = require('os');
+console.log(os.endianness());
 
 describe('BinarySearch', () => {
 
