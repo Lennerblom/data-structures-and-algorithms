@@ -6,15 +6,15 @@ console.log(os.endianness());
 
 describe('BinarySearch', () => {
 
-  it('BinarySearch() returns index of given number', () => {
+  xit('BinarySearch() returns index of given number', () => {
     expect(BinarySearch([4,8,15,16,32],16)).toBe(3);
   });
 
-  it('BinarySearch() returns -1 if search key does not exist in array', () => {
+  xit('BinarySearch() returns -1 if search key does not exist in array', () => {
     expect(BinarySearch([4,8,15,16,32],7)).toBe(-1);
   });
 
-  it('BinarySearch works with large arrays', () => {
+  xit('BinarySearch works with large arrays', () => {
     function makeBigArray() {
       const bigArr = [];
       for(let i = 0; i < 1000000; i++) {

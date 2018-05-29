@@ -1,43 +1,43 @@
-'use strict';
+ 'use strict';
 
 
-function BinarySearch (arr,num) {
-  let upperBound = arr.length;
-  let lowerBound = 0;
-  let middle = Math.floor(arr.length/2);
-  let candidate = arr[middle];
-  if(num === candidate) {
-    return middle;
-  }  
+// function BinarySearch (arr,num) {
+//   let upperBound = arr.length;
+//   let lowerBound = 0;
+//   let middle = Math.floor(arr.length/2);
+//   let candidate = arr[middle];
+//   if(num === candidate) {
+//     return middle;
+//   }  
   
-  if(num < candidate) {
-    upperBound = middle;
-  }
+//   if(num < candidate) {
+//     upperBound = middle;
+//   }
 
-  if(num > candidate) {
-    lowerBound = middle;
-  }
-  middle = Math.floor((upperBound - lowerBound)/2);
-  candidate = arr[middle];
+//   if(num > candidate) {
+//     lowerBound = middle;
+//   }
+//   middle = Math.floor((upperBound - lowerBound)/2);
+//   candidate = arr[middle];
 
-  if(num === candidate) {
-    return middle;
-}
-  if(num < candidate) {
-  upperBound = middle;
+//   if(num === candidate) {
+//     return middle;
+// }
+//   if(num < candidate) {
+//   upperBound = middle;
   
-  if(num > candidate) {
-    lowerBound = middle;
-  }
-  middle = Math.floor((upperBound - lowerBound)/2 + lowerBound);
+//   if(num > candidate) {
+//     lowerBound = middle;
+//   }
+//   middle = Math.floor((upperBound - lowerBound)/2 + lowerBound);
 
-  candidate = arr[middle];
+//   candidate = arr[middle];
 
-  if(num === candidate) {
-    return middle;
-} 
+//   if(num === candidate) {
+//     return middle;
+// } 
 
-return -1;
+// return -1;
 
 
 
