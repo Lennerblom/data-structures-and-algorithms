@@ -1,0 +1,18 @@
+'use strict';
+
+const LargestProduct = require('../lib/array_adjacent_products.js');
+
+describe('Array Adjacent Product', () => {
+
+  let expected, actual;
+
+  it('should return the product of a simple matrix', (done) => {
+    expected = 8;
+
+    actual = [[2,4]];
+
+    expect(LargestProduct(actual)).toBe(expected);
+
+    done();
+  });
+});

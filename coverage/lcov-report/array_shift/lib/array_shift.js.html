@@ -20,31 +20,31 @@
     </h1>
     <div class='clearfix'>
       <div class='fl pad1y space-right2'>
-        <span class="strong">73.33% </span>
+        <span class="strong">6.67% </span>
         <span class="quiet">Statements</span>
-        <span class='fraction'>11/15</span>
+        <span class='fraction'>1/15</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">50% </span>
+        <span class="strong">0% </span>
         <span class="quiet">Branches</span>
-        <span class='fraction'>1/2</span>
+        <span class='fraction'>0/2</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">100% </span>
+        <span class="strong">0% </span>
         <span class="quiet">Functions</span>
-        <span class='fraction'>1/1</span>
+        <span class='fraction'>0/1</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">73.33% </span>
+        <span class="strong">6.67% </span>
         <span class="quiet">Lines</span>
-        <span class='fraction'>11/15</span>
+        <span class='fraction'>1/15</span>
       </div>
     </div>
     <p class="quiet">
       Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
     </p>
   </div>
-  <div class='status-line medium'></div>
+  <div class='status-line low'></div>
 <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -75,52 +75,52 @@
 <a name='L27'></a><a href='#L27'>27</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span></td><td class="text"><pre class="prettyprint lang-js">'use strict';
 &nbsp;
-function insertShiftArray(arr, num) {
-  let newArr = [];
-  let index = 0;
-  <span class="missing-if-branch" title="else path not taken" >E</span>if((arr.length) %2 === 0) {
-    let index = (arr.length/2);
+function <span class="fstat-no" title="function not covered" >insertShiftArray(</span>arr, num) {
+  let newArr = <span class="cstat-no" title="statement not covered" >[];</span>
+  let index = <span class="cstat-no" title="statement not covered" >0;</span>
+<span class="cstat-no" title="statement not covered" >  if((arr.length) %2 === 0) {</span>
+    let index = (<span class="cstat-no" title="statement not covered" >arr.length/2)</span>;
     
-    console.log(index);
+<span class="cstat-no" title="statement not covered" >    console.log(index);</span>
   } else {
     let index = <span class="cstat-no" title="statement not covered" >(arr.length +1)/2;</span>
 <span class="cstat-no" title="statement not covered" >    console.log(index);</span>
-  };
-    for(let i = 0; i &lt; index; i++){
-<span class="cstat-no" title="statement not covered" >      newArr[i] = arr[i];</span>
-<span class="cstat-no" title="statement not covered" >      return newArr;</span>
-    };
-    newArr[index] = num;
-    for(let j = index+1;  j &lt; arr.length-1; j++) {
-      newArr[j] = arr[j];
-    };
+  }
+<span class="cstat-no" title="statement not covered" >  for(let i = 0; i &lt; index; i++){</span>
+<span class="cstat-no" title="statement not covered" >    newArr[i] = arr[i];</span>
+<span class="cstat-no" title="statement not covered" >    return newArr;</span>
+  }
+<span class="cstat-no" title="statement not covered" >  newArr[index] = num;</span>
+<span class="cstat-no" title="statement not covered" >  for(let j = index+1;  j &lt; arr.length-1; j++) {</span>
+<span class="cstat-no" title="statement not covered" >    newArr[j] = arr[j];</span>
+  }
  
-  return newArr;
+<span class="cstat-no" title="statement not covered" >  return newArr;</span>
 }
 &nbsp;
 &nbsp;
@@ -130,7 +130,7 @@ module.exports = insertShiftArray;</pre></td></tr>
 </div><!-- /wrapper -->
 <div class='footer quiet pad2 space-top1 center small'>
   Code coverage
-  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Mon May 21 2018 21:31:38 GMT-0700 (PDT)
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Mon May 28 2018 18:39:45 GMT-0700 (PDT)
 </div>
 </div>
 <script src="../../prettify.js"></script>
