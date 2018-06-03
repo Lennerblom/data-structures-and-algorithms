@@ -6,7 +6,7 @@ describe('Array Adjacent Product', () => {
 
   let expected, actual;
 
-  it('should return the product of a simple matrix', (done) => {
+  xit('should return the product of a simple matrix', (done) => {
     expected = 8;
 
     actual = [[2,4]];
