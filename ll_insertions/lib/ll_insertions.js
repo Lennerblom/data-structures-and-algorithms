@@ -7,8 +7,8 @@ class LinkedList {
     this.data = data;
     this.next = null;
   
-
-    function append(data){
+  
+    exports.append = (data) => {
       if(this.head === null) {
         this.head = new LinkedList(data);
       } else {
@@ -19,8 +19,8 @@ class LinkedList {
         }
         node.next = new LinkedList(data);
       }
-    }
-    function insertBefore(data, newData) {
+    };
+    exports.insertBefore = (data, newData) => {
       let node = new LinkedList(newData);
       let current = this.head;
       if(this.head.value === data){
@@ -37,8 +37,8 @@ class LinkedList {
       }
       node.next = current.next;
       current.next = node;
-    }
-    function insertAfter(data, newData) {
+    };
+    exports.insertAfter = (data, newData) => {
       let node = new LinkedList(newData);
       let current = this.head;
 
@@ -51,7 +51,7 @@ class LinkedList {
 
         current = current.next;
       }
-    }
+    };
 
   }
 }
@@ -59,3 +59,4 @@ class LinkedList {
 const myLinkedList = new LinkedList;
 
 module.exports = myLinkedList;
+module.exports = exports = {};
