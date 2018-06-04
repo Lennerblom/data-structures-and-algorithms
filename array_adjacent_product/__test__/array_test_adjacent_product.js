@@ -1,6 +1,6 @@
 'use strict';
 
-const LargestProduct = require('../lib/array_adjacent_products.js');
+const LargestProduct = require('../lib/array_adjacent_product.js');
 
 describe('Array Adjacent Product', () => {
 

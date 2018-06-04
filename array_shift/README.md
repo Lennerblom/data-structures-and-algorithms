@@ -1,6 +1,6 @@
 [![Build Status](https://travis-ci.org/Lennerblom/data-structures-and-algorithms.svg?branch=master)](https://travis-ci.org/Lennerblom/data-structures-and-algorithms)
 
-#array_shift
+# array_shift
 
 The insertShiftArray function has an arity of 2, an array and an element to insert into the middle index.  The funcion will return an array with the added element in the middle index.  
 
@@ -8,10 +8,10 @@ The insertShiftArray function has an arity of 2, an array and an element to inse
 
     insertShiftArray([4,8,15,25,32],17); //returns [4,8,15,17,25,32]
 
-##Challenge
+## Challenge
 
 The challenge in creating this function is to not use any built in javaScript functions.  slice() would normally make short work of this task.
 
-##Solution
+## Solution
 
 ![whiteboard](assets/array_shift.jpg)
