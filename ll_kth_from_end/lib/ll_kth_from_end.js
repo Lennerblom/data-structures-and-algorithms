@@ -58,9 +58,9 @@ class LinkedList {
         if(current.next === null) {
           break;
         }else {
-          current = current.next - num;
+          current = current.next //something
         }
-    
+    //set up counter
       }
     };
   }
