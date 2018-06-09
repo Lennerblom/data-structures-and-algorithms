@@ -14,4 +14,22 @@ describe('Linked List', () => {
     expect(actual).toBe(expected);
     done();
   });
+
+  it('insertBefore() should add data to the end of the list', (done) => {
+    
+    expected = 4;
+    actual = LL.insertBefore(2,4);
+
+    expect(actual).toBe(expected);
+    done();
+  });
+
+  it('insertAfter() should add data to the end of the list', (done) => {
+    
+    expected = 4;
+    actual = LL.insertAfter(2,4);
+
+    expect(actual).toBe(expected);
+    done();
+  });
 });
