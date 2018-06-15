@@ -9,18 +9,18 @@ describe('Linked List', () => {
   it('append() should add data to an empty list', (done) => {
     list.append(4);
     expected = 4;
-    actual = list.head.val;
+    actual = list.head.value;
 
     expect(actual).toBe(expected);
     done();
   });
 
-  xit('append() should add data to the end of the list', (done) => {
+  it('append() should add data to the end of the list', (done) => {
     list.append('taco');
     list.append('tamale');
     list.append('burrito');
     expected = 'burrito';
-    actual = list.head.next.next.val;
+    actual = list.head.next.next.value;
    
     expect(actual).toBe(expected);
     done();
@@ -37,12 +37,15 @@ describe('Linked List', () => {
     done();
   });
 
-  xit('insertAfter() should add data to the end of the list', (done) => {
-    
-    expected = 4;
-    actual = LL.insertAfter(2,4);
-
+  it('insertAfter() should add data to the end of the list', (done) => {
+    list.append('taco');
+    list.append('tamale');
+    list.append('burrito');
+    expected = 'crunchWrap';
+    list.insertAfter('tamale','crunchWrap');
+    actual = list.head.next.next.value;
     expect(actual).toBe(expected);
     done();
   });
+
 });

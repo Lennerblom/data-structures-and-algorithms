@@ -2,7 +2,7 @@
 
 class Node {
   constructor(val) {
-    this.val = val;
+    this.value = val;
     this.next = null;
   }
 }
@@ -15,7 +15,7 @@ class LinkedList {
     this.next = null;
   }
 
-  append(val) {
+  append(val){
     let node = new Node(val);
     console.log(val);
     if(this.head === null) {
@@ -29,7 +29,6 @@ class LinkedList {
     }
     return node.next;
   }
-
   insertBefore(val, newVal) {
     let node = new Node(newVal);
     let current = this.head;
@@ -40,36 +39,31 @@ class LinkedList {
     }
     while(current.next) {
       if(current.next.value === val) {
-        //node.next = current.next;
         break;
       }else {
         current = current.next;
       }
     }
-    node.next = current;
-    console.log(current);
+    node.next = current.next;
     current.next = node;
-    return this;
   }
+
   insertAfter(val, newVal) {
     let node = new Node(newVal);
+    console.log(node);
     let current = this.head;
 
     while(current){
+      console.log(current.value);
       if(current.value === val){
-        node = current.next;
+        node.next = current.next;
         current.next = node;
         break;
       }
-
       current = current.next;
     }
-    return current;
   }
 
 }
-    
-//const myLinkedList = new LinkedList;
 
 module.exports = LinkedList;
-//module.exports = Node;
