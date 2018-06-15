@@ -50,7 +50,6 @@ class LinkedList {
 
   insertAfter(val, newVal) {
     let node = new Node(newVal);
-    console.log(node);
     let current = this.head;
 
     while(current){
