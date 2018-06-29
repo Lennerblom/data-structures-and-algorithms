@@ -2,7 +2,7 @@
 
 class Node {
   constructor(val) {
-    this.val = val;
+    this.value = val;
     this.next = null;
     this.previous = null;
   }
@@ -16,9 +16,8 @@ class LinkedList {
     this.next = null;
   }
   
-  append(val) {
+  append(val){
     let node = new Node(val);
-    console.log(val);
     if(this.head === null) {
       this.head = new Node(val);
     } else {
@@ -30,7 +29,7 @@ class LinkedList {
     }
     return node.next;
   }
-    
+
   prepend(val) {
     let node = new Node(val);
     if(this.head === null) {
@@ -38,36 +37,42 @@ class LinkedList {
     } else {
       node.next = this.head ;
       this.head = node;
-      this.head.previous = node;
-      node = this.head;
     }
     return this.head;
   }
 
-  reverse(LinkedList) {
-    let node = LinkedList;
-    let previous = null;
-    while(node){
-      let save = node.next;
-      node.next = previous;
-      previous = node;
-      node = save;
-    }
-    return previous;
-  }
-  remove(offset) {
+  reverse() {
+    let current = this.head;
     if(!this.head) {return null;}
-    if(this.head === offset){
-      this.head = null;
-      return this;
+    else if(this.head.next === null) {
+      return this.head;
+    } else {
+      while(current.next) {
+        let save = current.next;
+        current.next = this.previous;
+        this.previous = current;
+        current = save;
+      }
+      this.head = current;
+      this.head.next = this.previous;
     }
-    let previous = this.head;
-    let current = previous.next;
-    while(current) {
-      if(current.val === offset) {
+  }
+ 
+  remove(offset) {
+    let newHead;
+    if(!this.head || !this.head.next && this.head === offset) {return null;}
+    if(this.head === offset){
+      this.head = this.head.next;
+      this.head.next = newHead;
+      this.head = newHead;
+      return this.head;
+    }
+    let current = this.head;
+    while(current.next) {
+      if(current.next.value === offset) {
+        current.next = current.next.next;
         break;
       }
-      previous = current;
       current = current.next;
     }
   }

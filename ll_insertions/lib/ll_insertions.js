@@ -17,7 +17,6 @@ class LinkedList {
 
   append(val){
     let node = new Node(val);
-    console.log(val);
     if(this.head === null) {
       this.head = new Node(val);
     } else {
@@ -53,7 +52,6 @@ class LinkedList {
     let current = this.head;
 
     while(current){
-      console.log(current.value);
       if(current.value === val){
         node.next = current.next;
         current.next = node;
