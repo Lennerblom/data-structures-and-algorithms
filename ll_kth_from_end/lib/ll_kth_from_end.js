@@ -54,10 +54,12 @@ class LinkedList {
     };
     exports.kth = (num) => {
       let current = this.head;
+      let temp = null;
       while(current.next) {
         if(current.next === null) {
           break;
         }else {
+          
           current = current.next //something
         }
     //set up counter
