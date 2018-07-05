@@ -61,11 +61,11 @@ class Queue {
     return dq;
   }
   serialize() {
-      let bla;
+    let bla;
   }
 
   deserialize() {
-      let bla;
+    let bla;
   }
 }
-export default Queue, Node, Stack;
+export default Queue;

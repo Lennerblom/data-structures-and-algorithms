@@ -27,7 +27,7 @@ function LargestProduct(matrix) {
   }
 }
 
-module.exports = LargestProduct;
+export default LargestProduct;
 
 // let LargestProduct = (matrix) => {
 //   for(let i = 0; i < 3; i++){
