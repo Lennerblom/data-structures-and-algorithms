@@ -11,4 +11,4 @@ let towersOfHanoi = (n,a,b,c) => {
   return 'complete!';
 };
 
-export default towersOfHanoi;
+module.exports = towersOfHanoi;
