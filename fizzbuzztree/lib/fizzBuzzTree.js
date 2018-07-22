@@ -1,5 +1,7 @@
 'use strict';
 
+import Tree from '../../trees/lib/trees';
+
 function fizzBuzzTree(tree) {
   if(tree.root.value % 3 === 0 && tree.root.value % 5 === 0){
     tree.root.value = 'fizzbuzz';
