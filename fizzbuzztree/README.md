@@ -1,8 +1,7 @@
 
 # FizzBuzzTree
 ---
-## Challenge
-Write a function called `FizzBuzzTree(tree)` which takes a tree as an argument.
-Without utilizing any of the built-in methods available to your language, determine weather or not the value of each node is divisible by 3, 5 or both, and change the value of each of the nodes respectively. Return the tree with it’s news values.
+## Description
+This function called `FizzBuzzTree(tree)` takes a tree as its only argument.  It will determine weather or not the value of each node is divisible by 3, 5 or both, and change the value of each of the nodes to 'fizz', 'buzz', or 'fizzbuzz' respectively. It then returns the tree with it’s news values.
 ## Solution
 ![whiteboard](assets/fizzbuzztree.jpg)

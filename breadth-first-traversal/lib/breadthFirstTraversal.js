@@ -11,7 +11,7 @@ class Node {
 class BinaryTree {
     constructor() {
         this.root = null;
-        this.children = null;
+        this.children = [];
     }
 insert(node){
     if(!this.root){

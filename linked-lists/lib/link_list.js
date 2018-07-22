@@ -88,6 +88,10 @@ class LinkedList {
     return str;
 
   }
+  deserialize() {
+    let something;
+    something;
+  }
 }
 
 module.exports = LinkedList;
