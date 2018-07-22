@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/Lennerblom/data-structures-and-algorithms.svg?branch=master)](https://travis-ci.org/Lennerblom/data-structures-and-algorithms)
+##### TRAVIS please check line 2037 for passing test for this function
 
 # FizzBuzzTree
 ---
