@@ -1,6 +1,6 @@
 'use strict';
 
-import toh from '../lib/towersOfHanoi.js';
+const toh = require('../lib/towersOfHanoi.js');
 
 describe('Towers of Hanoi', () => {
   let actual, expected;

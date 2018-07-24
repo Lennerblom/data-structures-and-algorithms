@@ -4,15 +4,18 @@
   "description": "___ This repository contains various modules creating and demonstrating various methods.  Each folder contains a method created to solve a particular problem, and in most cases by *not* using any built in methods. Tests were also written for each module.",
   "main": "index.js",
   "dependencies": {
+    "babel-env": "^2.4.1",
+    "babel-eslint": "^8.2.5",
+    "babel-register": "^6.26.0",
     "eslint": "^4.19.1",
-    "jest": "^23.1.0"
+    "jest": "^23.3.0"
   },
   "devDependencies": {},
   "scripts": {
     "lint": "eslint **/*.js",
     "start": "node index.js",
     "watch": "nodemon index.js",
-    "test": "jest --verbose --coverage"
+    "test": "jest --verbose --coverage --forceExit"
   },
   "repository": {
     "type": "git",
