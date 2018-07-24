@@ -1,5 +1,5 @@
 [![Build Status](https://travis-ci.org/Lennerblom/data-structures-and-algorithms.svg?branch=master)](https://travis-ci.org/Lennerblom/data-structures-and-algorithms)
-##### TRAVIS please check line ____ for passing test for this function
+##### TRAVIS please check line 1615 for passing test for this function
 
 # Find Max Value Binary Tree
 ---
