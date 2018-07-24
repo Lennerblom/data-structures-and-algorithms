@@ -71,13 +71,14 @@ class Trees {
 
   serialize() {
     let str = '';
-    str += this.root;
-    let node = this.children;
-    while(node) {
-      str += '[' + node.value + '] ';
+    str += this.root.value;
+    for(let i = 0; i < this.children.length; i++) {
+      str += ', ' + this.children[i].value;
     }
+    console.log(str);
     return str;
   }
+
 
   deserialize() {
 
