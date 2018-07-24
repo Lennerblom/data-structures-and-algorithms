@@ -42,14 +42,6 @@ class Trees {
       }
     }
   }
-  // otherInsert(node) {
-  //   node = new Node();
-  //   if(this.root === null) {
-  //     this.root = node;
-  //   } else {
-  //     this.children.push(node);
-  //   }
-  // }
 
   remove(node) {
     if(this.root.value === node.value) {
